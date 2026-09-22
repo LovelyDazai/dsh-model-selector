@@ -1,0 +1,6 @@
+# bundle patch 层：插入本插件的宿主条目。
+# 宿主半边（lib/index.js）是无操作占位——profile bundle 要求 manifest 有宿主条目，
+# 否则 boot 会拒绝加载；全部功能在浏览器半边 lib/client.js。
+- insert:
+    - id: model-menu-search
+      name: dsh-model-menu-search
